@@ -1,0 +1,17 @@
+{
+  "name": "El Mundo Mágico de los Pegajositos Ecológicos",
+  "short_name": "Pegajositos",
+  "description": "Aventura educativa: aprende valores y a cuidar el planeta con los Pegajositos.",
+  "lang": "es",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#bfeab0",
+  "theme_color": "#1f9d63",
+  "icons": [
+    { "src": "assets/icons/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "assets/icons/icon-512.png", "sizes": "512x512", "type": "image/png" },
+    { "src": "assets/icons/maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}

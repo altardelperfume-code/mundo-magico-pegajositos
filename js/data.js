@@ -7,8 +7,8 @@ export const CONFIG = {
   appName: 'El Mundo Mágico de los Pegajositos Ecológicos',
   // Ruta del logo del colegio (por ejemplo 'assets/logo-colegio.png').
   // Mientras sea null se muestra un espacio reservado: no inventamos el logo.
-  schoolLogo: null,
-  schoolName: 'Mi colegio',
+  schoolLogo: 'assets/logo-colegio.webp',
+  schoolName: 'Colegio Nuestra Señora del Rosario de Chiquinquirá',
   credits: 'Personajes creados por los estudiantes de 4A · 2022',
   // Cuántos retos de un lugar hay que completar para abrir el siguiente.
   retosParaDesbloquear: 2,

@@ -1,5 +1,6 @@
-// Sonidos suaves generados con Web Audio (sin archivos externos) y lectura en voz alta.
+// Sonidos suaves generados con Web Audio y voces grabadas de los personajes.
 import { state } from './state.js';
+import { voiceKey, cleanSpeech } from './lines.js';
 
 let ctx = null;
 function ac() {
@@ -37,19 +38,58 @@ export function play(name) {
   try { SOUNDS[name]?.(); } catch (e) { /* sin audio */ }
 }
 
-export const canSpeak = 'speechSynthesis' in window;
+// ---------------------------------------------------------------- VOCES
+// Las frases grabadas viven en audio/voces/<personaje>/<clave>.mp3 y
+// manifest.json dice cuáles existen (se generan con tools/voces).
+let recorded = new Set();
+fetch('audio/voces/manifest.json')
+  .then(r => (r.ok ? r.json() : { keys: [] }))
+  .then(m => { recorded = new Set(m.keys); })
+  .catch(() => {});
 
-export function speak(text) {
-  if (!canSpeak) return;
+let queue = [], player = null, token = 0;
+
+// Dice una o varias frases con la voz del personaje.
+// manual: el niño tocó 🔊 (suena aunque el sonido esté apagado y, si falta
+// la grabación, usa la voz del navegador como respaldo).
+export function speakAs(char, texts, { manual = false } = {}) {
+  if (!manual && !state.sound) return;
+  stopSpeaking();
+  queue = [].concat(texts).filter(Boolean).map(text => ({ char, text: cleanSpeech(text), manual }));
+  next(++token);
+}
+
+function next(t) {
+  if (t !== token) return;
+  const item = queue.shift();
+  if (!item) return;
+  const key = voiceKey(item.char, item.text);
+  if (item.char && recorded.has(key)) {
+    player = new Audio(`audio/voces/${item.char}/${key}.mp3`);
+    player.onended = () => next(t);
+    player.onerror = () => fallback(item, t);
+    player.play().catch(() => fallback(item, t));
+  } else {
+    console.debug('[voz] frase sin grabación:', item.char, item.text);
+    fallback(item, t);
+  }
+}
+
+function fallback(item, t) {
+  if (!item.manual || !('speechSynthesis' in window)) return next(t);
   try {
-    speechSynthesis.cancel();
-    const u = new SpeechSynthesisUtterance(text.replace(/[^\p{L}\p{N}\s¡!¿?.,:;“”"'-]/gu, ''));
+    const u = new SpeechSynthesisUtterance(item.text);
     u.lang = 'es-CO';
     const voice = speechSynthesis.getVoices().find(v => v.lang.startsWith('es'));
     if (voice) u.voice = voice;
-    u.rate = 0.95; u.pitch = 1.15;
+    u.onend = () => next(t);
     speechSynthesis.speak(u);
-  } catch (e) { /* sin voz */ }
+  } catch (e) { next(t); }
 }
 
-export function stopSpeaking() { if (canSpeak) speechSynthesis.cancel(); }
+export function stopSpeaking() {
+  token++;
+  queue = [];
+  if (player) { player.pause(); player = null; }
+  if ('speechSynthesis' in window) speechSynthesis.cancel();
+}

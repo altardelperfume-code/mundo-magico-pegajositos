@@ -1,7 +1,8 @@
 // Motores de las actividades. Cada uno recibe (actividad, contenedor, api).
-// api: right(text, then) · wrong(text) · say(text, mood) · mistake() · finish(text) · host
+// api: right(text, then) · wrong(text) · say(text, mood, quiet) · speakAs(char, text) · mistake() · finish(text) · host
 import { CHARACTERS } from './data.js';
 import { play } from './audio.js';
+import { LINES } from './lines.js';
 
 const shuffle = arr => {
   const a = [...arr];
@@ -68,16 +69,17 @@ function series(act, el, api) {
             <span class="opt-text">${esc(t)}</span>
           </button>`).join('')}
       </div>`;
+    api.speakAs(act.host, i === 0 ? [act.prompt, item.text] : item.text);
     el.querySelectorAll('.option').forEach(btn => btn.addEventListener('click', () => {
       const n = +btn.dataset.n;
       if (n === item.answer) {
         btn.classList.add('is-right');
         el.querySelectorAll('.option').forEach(b => b.disabled = true);
-        api.right(item.explain, () => { i++; i < act.items.length ? draw() : api.finish(act.done || '¡Completaste todas las preguntas!'); });
+        api.right(item.explain, () => { i++; i < act.items.length ? draw() : api.finish(act.done || LINES.seriesDone); });
       } else {
         btn.classList.add('is-wrong'); btn.disabled = true; shake(btn);
         api.mistake();
-        api.wrong(item.hint || 'Lee la frase otra vez con calma y piensa cómo se sentirían los demás… o el planeta.');
+        api.wrong(item.hint || LINES.genericHint);
       }
     }));
   };
@@ -120,13 +122,13 @@ function sort(act, el, api) {
       binEl.querySelector('.bin-count').textContent = counts[binId];
       binEl.classList.remove('gulp'); void binEl.offsetWidth; binEl.classList.add('gulp');
       api.right(null);
-      api.say(`¡Sí! ${item.name}: ${act.bins.find(b => b.id === binId).name.toLowerCase()}.`, 'happy');
+      api.say(LINES.sortRight(item, act.bins.find(b => b.id === binId)), 'happy');
       drawTray();
       if (!left.length) setTimeout(() => api.finish(act.done), 450);
     } else {
       api.mistake();
       api.wrong(null);
-      api.say(`Esa no es su caneca. Pista: ${item.hint}`, 'think');
+      api.say(LINES.sortWrong(item), 'think');
       if (wasteEl) shake(wasteEl);
       shake(binEl);
     }
@@ -168,7 +170,7 @@ function sort(act, el, api) {
       if (w.dataset.dragged) { delete w.dataset.dragged; return; }
       selected = selected === item ? null : item;
       play('pick');
-      if (selected) api.say(`${item.name}. Ahora toca la caneca correcta.`, 'think');
+      if (selected) api.say(LINES.sortPicked(item), 'think');
       drawTray();
       tray.querySelector('.selected')?.focus();
     });
@@ -176,7 +178,7 @@ function sort(act, el, api) {
   const binAt = e => document.elementFromPoint(e.clientX, e.clientY)?.closest('.bin');
 
   el.querySelectorAll('.bin').forEach(b => b.addEventListener('click', () => {
-    if (!selected) { api.say('Primero elige un residuo de arriba 👆', 'think'); shake(tray); return; }
+    if (!selected) { api.say(LINES.sortFirst, 'think'); shake(tray); return; }
     drop(selected, b.dataset.bin, tray.querySelector('.selected'));
   }));
   drawTray();
@@ -198,7 +200,7 @@ function find(act, el, api) {
     el.querySelector('.fc-num').textContent = found;
     api.right(null);
     const t = act.targets[+b.dataset.t];
-    api.say(found < act.targets.length ? `¡Recogiste ${t.name}! Faltan ${act.targets.length - found}.` : '¡Lo lograste!', 'happy');
+    api.say(LINES.findGot(t, act.targets.length - found), 'happy');
     if (found === act.targets.length) setTimeout(() => api.finish(act.done), 600);
   }));
   el.querySelectorAll('.decoy').forEach(b => b.addEventListener('click', () => {
@@ -236,7 +238,8 @@ function story(act, el, api) {
     }));
     el.querySelector('[data-act="retry"]')?.addEventListener('click', () => draw(lastChoiceNode));
     el.querySelector('[data-act="finish"]')?.addEventListener('click', () => api.finish(node.text));
-    if (node.end) api.say(node.end === 'retry' ? '¡No pasa nada! Volvamos a elegir.' : '¡Qué buen final!', node.end === 'retry' ? 'think' : 'happy');
+    if (node.end) api.say(node.end === 'retry' ? LINES.storyRetry : LINES.storyGood, node.end === 'retry' ? 'think' : 'happy', true);
+    api.speakAs(node.who, node.text);
   };
   draw(act.start);
 }
@@ -260,10 +263,10 @@ function order(act, el, api) {
       next++;
       api.right(null);
       if (next === act.steps.length) setTimeout(() => api.finish(act.done), 500);
-      else api.say(`¡Bien! ¿Cuál es el paso ${next + 1}?`, 'happy');
+      else api.say(LINES.orderNext(next + 1), 'happy');
     } else {
       shake(b); api.mistake(); api.wrong(null);
-      api.say(next === 0 ? act.hint : `Ese paso viene después. ¿Qué sigue luego de “${act.steps[next - 1].text.toLowerCase()}”?`, 'think');
+      api.say(next === 0 ? act.hint : LINES.orderAfter(act.steps[next - 1]), 'think');
     }
   }));
 }
@@ -296,12 +299,12 @@ function match(act, el, api) {
       matched++;
       [pick.el, b].forEach(x => { x.classList.remove('sel'); x.classList.add('matched'); x.disabled = true; x.style.setProperty('--m', CHARACTERS[charId].color); x.dataset.num = matched; });
       api.right(null);
-      api.say(`¡Sí! ${CHARACTERS[charId].motto}.`, 'happy');
+      api.say(LINES.matchRight(CHARACTERS[charId]), 'happy');
       if (matched === ids.length) setTimeout(() => api.finish(act.done), 500);
     } else {
       shake(b); shake(pick.el); pick.el.classList.remove('sel');
       api.mistake(); api.wrong(null);
-      api.say(`Pista sobre ${CHARACTERS[charId].name}: ${CHARACTERS[charId].about}`, 'think');
+      api.say(LINES.matchHint(CHARACTERS[charId]), 'think');
     }
     pick = null;
   }));

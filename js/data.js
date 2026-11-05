@@ -9,7 +9,7 @@ export const CONFIG = {
   // Mientras sea null se muestra un espacio reservado: no inventamos el logo.
   schoolLogo: 'assets/logo-colegio.webp',
   schoolName: 'Colegio Nuestra Señora del Rosario de Chiquinquirá',
-  credits: 'Personajes creados por los estudiantes de 4A · 2022',
+  credits: 'Personajes creados por los estudiantes de 4A · 2022 · Voces generadas con Piper (voces libres claude, daniela y ald)',
   // Cuántos retos de un lugar hay que completar para abrir el siguiente.
   retosParaDesbloquear: 2,
 };

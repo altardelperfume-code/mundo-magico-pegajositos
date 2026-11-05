@@ -5,7 +5,8 @@ import {
   progressPct, completeActivity, registerAnswer, markSeen,
 } from './state.js';
 import { ENGINES } from './activities.js';
-import { play, speak, stopSpeaking, canSpeak } from './audio.js';
+import { play, speakAs, stopSpeaking } from './audio.js';
+import { LINES } from './lines.js';
 
 const $ = (s, r = document) => r.querySelector(s);
 const screen = $('#screen');
@@ -60,8 +61,8 @@ function viewHome() {
         <h1 class="title">El Mundo Mágico de los <span>Pegajositos Ecológicos</span></h1>
         <div class="bubble home-bubble">
           <img src="${CHARACTERS.romina.img}" alt="">
-          <p>¡Hola, explorador! ¿Listo para aprender y salvar nuestro mundo?</p>
-          ${canSpeak ? `<button class="icon-btn" data-speak="¡Hola, explorador! ¿Listo para aprender y salvar nuestro mundo?" aria-label="Escuchar">🔊</button>` : ''}
+          <p>${LINES.homeGreeting}</p>
+          <button class="icon-btn" data-char="romina" data-speak="${LINES.homeGreeting}" aria-label="Escuchar a Romina">🔊</button>
         </div>
         <a class="btn btn-sun btn-xl pulse" href="#mapa">🚀 ¡EMPEZAR AVENTURA!</a>
         <a class="btn btn-ghost" href="#personajes">🫶 Conocer a los personajes</a>
@@ -142,9 +143,10 @@ function viewZone(id) {
     screen.innerHTML = `
       <section class="zone locked-zone" style="--c:${z.color}">
         <div class="zone-hero" style="--focus:${z.focus}"><span class="lock-big">🔒</span></div>
-        <div class="bubble"><img src="${g.img}" alt=""><p>¡Este lugar todavía está dormido! Completa ${CONFIG.retosParaDesbloquear} retos en <b>${prev.name}</b> para despertarlo.</p></div>
+        <div class="bubble"><img src="${g.img}" alt=""><p>${LINES.locked(prev)}</p><button class="icon-btn" data-char="${z.guide}" data-speak="${LINES.locked(prev)}" aria-label="Escuchar">🔊</button></div>
         <div class="row-btns"><a class="btn btn-sun" href="#lugar/${prev.id}">Ir a ${prev.short}</a><a class="btn btn-ghost" href="#mapa">🗺️ Volver al mapa</a></div>
       </section>`;
+    speakAs(z.guide, LINES.locked(prev));
     return;
   }
   screen.innerHTML = `
@@ -159,7 +161,7 @@ function viewZone(id) {
       <div class="bubble">
         <img src="${g.img}" alt="">
         <p>${z.story}</p>
-        ${canSpeak ? `<button class="icon-btn" data-speak="${z.story}" aria-label="Escuchar">🔊</button>` : ''}
+        <button class="icon-btn" data-char="${z.guide}" data-speak="${z.story}" aria-label="Escuchar a ${g.name}">🔊</button>
       </div>
       <div class="zone-progress">
         <span>Retos: <b>${zoneDone(z)} / ${z.activities.length}</b></span>
@@ -177,6 +179,7 @@ function viewZone(id) {
         }).join('')}
       </ol>
     </section>`;
+  speakAs(z.guide, z.story);
 }
 
 // ------------------------------------------------------------------ ACTIVIDAD
@@ -201,7 +204,7 @@ function viewActivity(zid, idx) {
         <img class="host-img" src="${host.img}" alt="${host.name}">
         <div class="host-bubble" aria-live="polite">
           <p class="host-say">${act.prompt}</p>
-          ${canSpeak ? `<button class="icon-btn" data-speak-host aria-label="Escuchar la instrucción">🔊</button>` : ''}
+          <button class="icon-btn" data-speak-host aria-label="Escuchar a ${host.name}">🔊</button>
         </div>
       </div>
       <div class="act-body"></div>
@@ -210,9 +213,11 @@ function viewActivity(zid, idx) {
         <a class="btn btn-ghost small" href="#mapa">🗺️ Volver al mapa</a>
       </div>
     </section>`;
-  const say = (text, mood, silent) => {
+  // quiet: solo cambia el globo de texto, sin decirlo en voz alta.
+  const say = (text, mood, quiet) => {
     const s = $('.host-say'); if (!s) return;
     s.textContent = text;
+    if (!quiet) speakAs(act.host, text);
     const img = $('.host-img');
     img.classList.remove('happy', 'think'); void img.offsetWidth;
     if (mood) img.classList.add(mood);
@@ -221,6 +226,7 @@ function viewActivity(zid, idx) {
     host: act.host,
     focus: z.focus,
     say,
+    speakAs: (char, texts) => speakAs(char, texts),
     mistake() { current.mistakes++; current.afterMistake = true; },
     right(text, then) {
       play('correct');
@@ -237,7 +243,9 @@ function viewActivity(zid, idx) {
     finish(text) { celebrate(text); },
   };
   $('[data-restart]').addEventListener('click', () => viewActivity(zid, idx));
-  $('[data-speak-host]')?.addEventListener('click', () => speak($('.host-say').textContent));
+  $('[data-speak-host]').addEventListener('click', () => speakAs(act.host, $('.host-say').textContent, { manual: true }));
+  // Las historias y las series dicen su propio texto al dibujarse.
+  if (act.type !== 'story' && act.type !== 'series') speakAs(act.host, act.prompt);
   ENGINES[act.type](act, $('.act-body'), api);
 }
 
@@ -254,6 +262,7 @@ function feedback(ok, text, then) {
         <button class="btn ${ok ? 'btn-green' : 'btn-sun'}" data-close>${ok ? 'Continuar ➜' : '🔁 Intentar otra vez'}</button>
       </div>
     </div>`, then, 'sheet-wrap');
+  speakAs(current.act.host, [title, text]);
 }
 
 // Celebración al terminar un reto.
@@ -270,12 +279,13 @@ function celebrate(text) {
   const nextZone = ZONES.find(zz => zoneUnlocked(zz) && zoneStatus(zz) !== 'done');
   const nextHref = nextTarget >= 0 ? `#reto/${z.id}/${nextTarget}` : nextZone ? `#lugar/${nextZone.id}` : '#logros';
   const nextLabel = nextTarget >= 0 ? 'Siguiente reto ➜' : nextZone ? `Ir a ${nextZone.short} ➜` : 'Ver mis logros 🏆';
-  const effort = mistakes === 0 ? '¡Perfecto a la primera!' : '¡Seguiste intentando hasta lograrlo! Eso es esfuerzo.';
+  const effort = LINES.effort(mistakes === 0);
+  const title = LINES.celebrateTitle(res.medal);
   openModal(`
     <div class="celebration" role="dialog" aria-labelledby="cel-t">
       <div class="rays" aria-hidden="true"></div>
       <img class="cel-char" src="${host.img}" alt="${host.name} celebrando">
-      <h2 id="cel-t">${res.medal ? '¡Misión cumplida!' : '¡Reto superado!'}</h2>
+      <h2 id="cel-t">${title}</h2>
       <div class="cel-stars" aria-label="${res.stars} de 3 estrellas">${[1, 2, 3].map(n => `<span class="${res.stars >= n ? 'on' : ''}" style="--d:${n * 0.25}s">★</span>`).join('')}</div>
       <p class="cel-effort">${effort}</p>
       ${text ? `<p class="cel-learn"><b>Aprendiste:</b> ${text}</p>` : ''}
@@ -288,6 +298,7 @@ function celebrate(text) {
       </div>
     </div>`, null, 'cel-wrap');
   $('[data-replay]').addEventListener('click', () => { closeModal(); viewActivity(z.id, idx); });
+  speakAs(act.host, [title, effort]);
   announceBadges(res.newBadges);
   if (res.medal) setTimeout(() => toast(`<span class="t-ico">${res.medal.icon}</span><span><b>¡Medalla ganada!</b><br>${res.medal.name}</span>`, 'badge'), 300);
 }
@@ -332,10 +343,11 @@ function openCharacter(id) {
       <img class="cm-img wave" src="${c.img}" alt="${c.name}">
       <h2 id="cm-t">${c.name}</h2>
       <p class="cm-motto">${c.motto}</p>
-      <div class="bubble"><p>${c.greeting}</p>${canSpeak ? `<button class="icon-btn" data-speak="${c.greeting}" aria-label="Escuchar">🔊</button>` : ''}</div>
+      <div class="bubble"><p>${c.greeting}</p><button class="icon-btn" data-char="${id}" data-speak="${c.greeting}" aria-label="Escuchar a ${c.name}">🔊</button></div>
       <p class="cm-about">${c.about}</p>
       ${zone ? `<a class="btn btn-sun" href="${zone === GARDEN ? '#logros' : '#lugar/' + zone.id}" data-close>📍 Visitar ${zone.name}</a>` : ''}
     </div>`, () => { if (location.hash.startsWith('#personajes')) viewCharacters(); });
+  speakAs(id, c.greeting);
 }
 
 // ------------------------------------------------------------------ LOGROS
@@ -480,7 +492,7 @@ function router() {
 // ------------------------------------------------------------------ EVENTOS GLOBALES
 document.addEventListener('click', e => {
   const sp = e.target.closest('[data-speak]');
-  if (sp) { speak(sp.dataset.speak); return; }
+  if (sp) { speakAs(sp.dataset.char, sp.dataset.speak, { manual: true }); return; }
   if (e.target.closest('.btn, .option, .spot, .mission, .dock a')) play('tap');
 });
 document.addEventListener('keydown', e => {

@@ -1,0 +1,1392 @@
+[
+ {
+  "char": "romina",
+  "text": "¡Hola, explorador! Soy Romina. ¡Juntos haremos muchos amigos!",
+  "key": "d37f06db"
+ },
+ {
+  "char": "romina",
+  "text": "¡Excelente! ¡Lo lograste!",
+  "key": "7b86e800"
+ },
+ {
+  "char": "romina",
+  "text": "¡Muy bien, explorador!",
+  "key": "e4e6467e"
+ },
+ {
+  "char": "romina",
+  "text": "¡Tu decisión ayuda a nuestro planeta!",
+  "key": "fd20f89c"
+ },
+ {
+  "char": "romina",
+  "text": "¡Has aprendido algo maravilloso!",
+  "key": "fa59e2e7"
+ },
+ {
+  "char": "romina",
+  "text": "¡Casi lo consigues! Vamos a intentarlo otra vez.",
+  "key": "317d2cce"
+ },
+ {
+  "char": "romina",
+  "text": "No pasa nada. ¡Aprendamos juntos!",
+  "key": "c507f7b6"
+ },
+ {
+  "char": "romina",
+  "text": "Mira esta pista y vuelve a intentarlo.",
+  "key": "9dd5b529"
+ },
+ {
+  "char": "romina",
+  "text": "¡Misión cumplida!",
+  "key": "879383a1"
+ },
+ {
+  "char": "romina",
+  "text": "¡Perfecto a la primera!",
+  "key": "465378d7"
+ },
+ {
+  "char": "romina",
+  "text": "¡Reto superado!",
+  "key": "d83a39bc"
+ },
+ {
+  "char": "romina",
+  "text": "¡Seguiste intentando hasta lograrlo! Eso es esfuerzo.",
+  "key": "5b61f895"
+ },
+ {
+  "char": "celestial",
+  "text": "¡Hola! Soy Celestial. Respetar es escuchar y tratar bien a los demás.",
+  "key": "759b1006"
+ },
+ {
+  "char": "celestial",
+  "text": "¡Excelente! ¡Lo lograste!",
+  "key": "52990360"
+ },
+ {
+  "char": "celestial",
+  "text": "¡Muy bien, explorador!",
+  "key": "7ef3151e"
+ },
+ {
+  "char": "celestial",
+  "text": "¡Tu decisión ayuda a nuestro planeta!",
+  "key": "34039cbc"
+ },
+ {
+  "char": "celestial",
+  "text": "¡Has aprendido algo maravilloso!",
+  "key": "153bb507"
+ },
+ {
+  "char": "celestial",
+  "text": "¡Casi lo consigues! Vamos a intentarlo otra vez.",
+  "key": "121b532e"
+ },
+ {
+  "char": "celestial",
+  "text": "No pasa nada. ¡Aprendamos juntos!",
+  "key": "7b849516"
+ },
+ {
+  "char": "celestial",
+  "text": "Mira esta pista y vuelve a intentarlo.",
+  "key": "422af5c9"
+ },
+ {
+  "char": "celestial",
+  "text": "¡Misión cumplida!",
+  "key": "2389b5c1"
+ },
+ {
+  "char": "celestial",
+  "text": "¡Perfecto a la primera!",
+  "key": "41d300f7"
+ },
+ {
+  "char": "celestial",
+  "text": "¡Reto superado!",
+  "key": "7f6f135c"
+ },
+ {
+  "char": "celestial",
+  "text": "¡Seguiste intentando hasta lograrlo! Eso es esfuerzo.",
+  "key": "08dcfc75"
+ },
+ {
+  "char": "gatiamor",
+  "text": "¡Miau! Soy GATIAMOR. Un abrazo y una palabra bonita cambian el día.",
+  "key": "61c4ab7b"
+ },
+ {
+  "char": "gatiamor",
+  "text": "¡Excelente! ¡Lo lograste!",
+  "key": "2a158494"
+ },
+ {
+  "char": "gatiamor",
+  "text": "¡Muy bien, explorador!",
+  "key": "6fa27a0a"
+ },
+ {
+  "char": "gatiamor",
+  "text": "¡Tu decisión ayuda a nuestro planeta!",
+  "key": "e7b5d4f0"
+ },
+ {
+  "char": "gatiamor",
+  "text": "¡Has aprendido algo maravilloso!",
+  "key": "a21947f3"
+ },
+ {
+  "char": "gatiamor",
+  "text": "¡Casi lo consigues! Vamos a intentarlo otra vez.",
+  "key": "83333b0a"
+ },
+ {
+  "char": "gatiamor",
+  "text": "No pasa nada. ¡Aprendamos juntos!",
+  "key": "6d891eca"
+ },
+ {
+  "char": "gatiamor",
+  "text": "Mira esta pista y vuelve a intentarlo.",
+  "key": "ca31b0b5"
+ },
+ {
+  "char": "gatiamor",
+  "text": "¡Misión cumplida!",
+  "key": "6df38435"
+ },
+ {
+  "char": "gatiamor",
+  "text": "¡Perfecto a la primera!",
+  "key": "6c26f34b"
+ },
+ {
+  "char": "gatiamor",
+  "text": "¡Reto superado!",
+  "key": "afedb198"
+ },
+ {
+  "char": "gatiamor",
+  "text": "¡Seguiste intentando hasta lograrlo! Eso es esfuerzo.",
+  "key": "14e3d959"
+ },
+ {
+  "char": "hielosi",
+  "text": "¡Hola! Soy Hielosi. Si alguien necesita ayuda, ¡ahí estaré!",
+  "key": "be75c2f5"
+ },
+ {
+  "char": "hielosi",
+  "text": "¡Excelente! ¡Lo lograste!",
+  "key": "b39c3fc9"
+ },
+ {
+  "char": "hielosi",
+  "text": "¡Muy bien, explorador!",
+  "key": "caf459d5"
+ },
+ {
+  "char": "hielosi",
+  "text": "¡Tu decisión ayuda a nuestro planeta!",
+  "key": "c2472535"
+ },
+ {
+  "char": "hielosi",
+  "text": "¡Has aprendido algo maravilloso!",
+  "key": "9107b790"
+ },
+ {
+  "char": "hielosi",
+  "text": "¡Casi lo consigues! Vamos a intentarlo otra vez.",
+  "key": "f4be3495"
+ },
+ {
+  "char": "hielosi",
+  "text": "No pasa nada. ¡Aprendamos juntos!",
+  "key": "4c8747f7"
+ },
+ {
+  "char": "hielosi",
+  "text": "Mira esta pista y vuelve a intentarlo.",
+  "key": "337a3fce"
+ },
+ {
+  "char": "hielosi",
+  "text": "¡Misión cumplida!",
+  "key": "8a59e80c"
+ },
+ {
+  "char": "hielosi",
+  "text": "¡Perfecto a la primera!",
+  "key": "ba5fc232"
+ },
+ {
+  "char": "hielosi",
+  "text": "¡Reto superado!",
+  "key": "78e11aa9"
+ },
+ {
+  "char": "hielosi",
+  "text": "¡Seguiste intentando hasta lograrlo! Eso es esfuerzo.",
+  "key": "be9a2f0c"
+ },
+ {
+  "char": "aquarius",
+  "text": "¡Glu glu! Soy Aquarius. Cada gota cuenta, ¡cuidémosla!",
+  "key": "ca451f38"
+ },
+ {
+  "char": "aquarius",
+  "text": "¡Excelente! ¡Lo lograste!",
+  "key": "c0aa2a9d"
+ },
+ {
+  "char": "aquarius",
+  "text": "¡Muy bien, explorador!",
+  "key": "88488651"
+ },
+ {
+  "char": "aquarius",
+  "text": "¡Tu decisión ayuda a nuestro planeta!",
+  "key": "1590e5c9"
+ },
+ {
+  "char": "aquarius",
+  "text": "¡Has aprendido algo maravilloso!",
+  "key": "c0a6336c"
+ },
+ {
+  "char": "aquarius",
+  "text": "¡Casi lo consigues! Vamos a intentarlo otra vez.",
+  "key": "951127a1"
+ },
+ {
+  "char": "aquarius",
+  "text": "No pasa nada. ¡Aprendamos juntos!",
+  "key": "b1d1f74b"
+ },
+ {
+  "char": "aquarius",
+  "text": "Mira esta pista y vuelve a intentarlo.",
+  "key": "8489c52a"
+ },
+ {
+  "char": "aquarius",
+  "text": "¡Misión cumplida!",
+  "key": "60932c60"
+ },
+ {
+  "char": "aquarius",
+  "text": "¡Perfecto a la primera!",
+  "key": "34e37a36"
+ },
+ {
+  "char": "aquarius",
+  "text": "¡Reto superado!",
+  "key": "a0305ba5"
+ },
+ {
+  "char": "aquarius",
+  "text": "¡Seguiste intentando hasta lograrlo! Eso es esfuerzo.",
+  "key": "947650f0"
+ },
+ {
+  "char": "popi",
+  "text": "¡Hola! Soy Popi. Nuestro colegio es de todos, ¡lo cuidamos juntos!",
+  "key": "7f1d88e3"
+ },
+ {
+  "char": "popi",
+  "text": "¡Excelente! ¡Lo lograste!",
+  "key": "f0ce496e"
+ },
+ {
+  "char": "popi",
+  "text": "¡Muy bien, explorador!",
+  "key": "172420a4"
+ },
+ {
+  "char": "popi",
+  "text": "¡Tu decisión ayuda a nuestro planeta!",
+  "key": "44b06722"
+ },
+ {
+  "char": "popi",
+  "text": "¡Has aprendido algo maravilloso!",
+  "key": "16a61441"
+ },
+ {
+  "char": "popi",
+  "text": "¡Casi lo consigues! Vamos a intentarlo otra vez.",
+  "key": "89eeecf0"
+ },
+ {
+  "char": "popi",
+  "text": "No pasa nada. ¡Aprendamos juntos!",
+  "key": "4690141c"
+ },
+ {
+  "char": "popi",
+  "text": "Mira esta pista y vuelve a intentarlo.",
+  "key": "2f56ac67"
+ },
+ {
+  "char": "popi",
+  "text": "¡Misión cumplida!",
+  "key": "96e9f93b"
+ },
+ {
+  "char": "popi",
+  "text": "¡Perfecto a la primera!",
+  "key": "9cc081d1"
+ },
+ {
+  "char": "popi",
+  "text": "¡Reto superado!",
+  "key": "81cfab52"
+ },
+ {
+  "char": "popi",
+  "text": "¡Seguiste intentando hasta lograrlo! Eso es esfuerzo.",
+  "key": "26a64787"
+ },
+ {
+  "char": "rosebell",
+  "text": "¡Hola! Soy Rosebell. Las plantas también son nuestras amigas.",
+  "key": "c9277d08"
+ },
+ {
+  "char": "rosebell",
+  "text": "¡Excelente! ¡Lo lograste!",
+  "key": "929d9b7e"
+ },
+ {
+  "char": "rosebell",
+  "text": "¡Muy bien, explorador!",
+  "key": "b2854934"
+ },
+ {
+  "char": "rosebell",
+  "text": "¡Tu decisión ayuda a nuestro planeta!",
+  "key": "09a76f92"
+ },
+ {
+  "char": "rosebell",
+  "text": "¡Has aprendido algo maravilloso!",
+  "key": "33af9191"
+ },
+ {
+  "char": "rosebell",
+  "text": "¡Casi lo consigues! Vamos a intentarlo otra vez.",
+  "key": "e6440920"
+ },
+ {
+  "char": "rosebell",
+  "text": "No pasa nada. ¡Aprendamos juntos!",
+  "key": "59236b8c"
+ },
+ {
+  "char": "rosebell",
+  "text": "Mira esta pista y vuelve a intentarlo.",
+  "key": "a1955857"
+ },
+ {
+  "char": "rosebell",
+  "text": "¡Misión cumplida!",
+  "key": "ff1dfaab"
+ },
+ {
+  "char": "rosebell",
+  "text": "¡Perfecto a la primera!",
+  "key": "5b127b41"
+ },
+ {
+  "char": "rosebell",
+  "text": "¡Reto superado!",
+  "key": "36bc9182"
+ },
+ {
+  "char": "rosebell",
+  "text": "¡Seguiste intentando hasta lograrlo! Eso es esfuerzo.",
+  "key": "eaeca1b7"
+ },
+ {
+  "char": "chochito",
+  "text": "¡Hola! Soy Chochito. Ser responsable es cumplir con lo que me toca.",
+  "key": "e646dae1"
+ },
+ {
+  "char": "chochito",
+  "text": "¡Excelente! ¡Lo lograste!",
+  "key": "0fde590f"
+ },
+ {
+  "char": "chochito",
+  "text": "¡Muy bien, explorador!",
+  "key": "898ea873"
+ },
+ {
+  "char": "chochito",
+  "text": "¡Tu decisión ayuda a nuestro planeta!",
+  "key": "6c441cc3"
+ },
+ {
+  "char": "chochito",
+  "text": "¡Has aprendido algo maravilloso!",
+  "key": "69ed8882"
+ },
+ {
+  "char": "chochito",
+  "text": "¡Casi lo consigues! Vamos a intentarlo otra vez.",
+  "key": "5544d22f"
+ },
+ {
+  "char": "chochito",
+  "text": "No pasa nada. ¡Aprendamos juntos!",
+  "key": "b22d885d"
+ },
+ {
+  "char": "chochito",
+  "text": "Mira esta pista y vuelve a intentarlo.",
+  "key": "ec0f277c"
+ },
+ {
+  "char": "chochito",
+  "text": "¡Misión cumplida!",
+  "key": "078c9686"
+ },
+ {
+  "char": "chochito",
+  "text": "¡Perfecto a la primera!",
+  "key": "db16dc0c"
+ },
+ {
+  "char": "chochito",
+  "text": "¡Reto superado!",
+  "key": "38e1b95f"
+ },
+ {
+  "char": "chochito",
+  "text": "¡Seguiste intentando hasta lograrlo! Eso es esfuerzo.",
+  "key": "744480fe"
+ },
+ {
+  "char": "romina",
+  "text": "¡Hola, explorador! ¿Listo para aprender y salvar nuestro mundo?",
+  "key": "83ae191a"
+ },
+ {
+  "char": "romina",
+  "text": "En este bosque los árboles crecen cuando los amigos se tratan con cariño. ¡Ayuda a Romina, Celestial y GATIAMOR a llenarlo de alegría!",
+  "key": "6efd0b51"
+ },
+ {
+  "char": "romina",
+  "text": "Llega un niño nuevo al salón. En el recreo está solito. ¿Qué haces?",
+  "key": "24823d01"
+ },
+ {
+  "char": "romina",
+  "text": "¡Así nace una amistad! Ser amigable es hacer que todos se sientan parte del grupo.",
+  "key": "e76e0e3d"
+ },
+ {
+  "char": "romina",
+  "text": "Imagina que tú eres el nuevo. ¿Qué te gustaría que hicieran por ti?",
+  "key": "a321971f"
+ },
+ {
+  "char": "romina",
+  "text": "Las burlas ponen triste a la gente. Busca la opción que lo haría sonreír.",
+  "key": "db4f6a40"
+ },
+ {
+  "char": "celestial",
+  "text": "Elige la palabra mágica para cada momento.",
+  "key": "b5dc61ff"
+ },
+ {
+  "char": "celestial",
+  "text": "Cuando pido algo, digo…",
+  "key": "9844fc29"
+ },
+ {
+  "char": "celestial",
+  "text": "“Por favor” hace que los demás quieran ayudarte.",
+  "key": "8107d6f7"
+ },
+ {
+  "char": "celestial",
+  "text": "Lee la frase otra vez con calma y piensa cómo se sentirían los demás… o el planeta.",
+  "key": "4635fdeb"
+ },
+ {
+  "char": "celestial",
+  "text": "Cuando alguien me ayuda, digo…",
+  "key": "a2792de7"
+ },
+ {
+  "char": "celestial",
+  "text": "Dar las gracias demuestra que valoras lo que hacen por ti.",
+  "key": "51f28458"
+ },
+ {
+  "char": "celestial",
+  "text": "Si empujo a alguien sin querer, digo…",
+  "key": "674d32ea"
+ },
+ {
+  "char": "celestial",
+  "text": "Pedir perdón ayuda a que todos estén bien otra vez.",
+  "key": "74b1e1b0"
+ },
+ {
+  "char": "celestial",
+  "text": "Cuando llego al salón, digo…",
+  "key": "16c6ddcd"
+ },
+ {
+  "char": "celestial",
+  "text": "Un saludo alegre es el comienzo de un buen día.",
+  "key": "50c6aa9d"
+ },
+ {
+  "char": "celestial",
+  "text": "¡Completaste todas las preguntas!",
+  "key": "ae8dac30"
+ },
+ {
+  "char": "gatiamor",
+  "text": "Elige qué hace GATIAMOR y mira cómo cambia la historia.",
+  "key": "f31035a6"
+ },
+ {
+  "char": "celestial",
+  "text": "A Celestial se le cayó su dibujo en un charco. Está muy triste. ¿Qué hace GATIAMOR?",
+  "key": "fbe2bfdd"
+ },
+ {
+  "char": "gatiamor",
+  "text": "Celestial sonríe un poquito. ¿Cómo pueden alegrarse aún más?",
+  "key": "8d8510ec"
+ },
+ {
+  "char": "celestial",
+  "text": "Celestial se sintió peor. Reírse del problema de alguien lastima su corazón. ¡Probemos otra vez!",
+  "key": "8ecb23a1"
+ },
+ {
+  "char": "celestial",
+  "text": "Las palabras también pueden doler. Elijamos palabras con amor.",
+  "key": "d17e6a7b"
+ },
+ {
+  "char": "gatiamor",
+  "text": "¡El nuevo dibujo quedó precioso! El amor se nota en lo que hacemos por los demás.",
+  "key": "7a3e5db8"
+ },
+ {
+  "char": "gatiamor",
+  "text": "¡No pasa nada! Volvamos a elegir.",
+  "key": "dceae819"
+ },
+ {
+  "char": "gatiamor",
+  "text": "¡Qué buen final!",
+  "key": "86271462"
+ },
+ {
+  "char": "celestial",
+  "text": "Lee cada frase. ¿Es verdadera o falsa?",
+  "key": "e81f64ab"
+ },
+ {
+  "char": "celestial",
+  "text": "Respetar es escuchar cuando otra persona habla.",
+  "key": "f49068ab"
+ },
+ {
+  "char": "celestial",
+  "text": "¡Sí! Escuchar es una forma de decir “me importas”.",
+  "key": "f4aa6e2a"
+ },
+ {
+  "char": "celestial",
+  "text": "Si alguien piensa diferente, debo gritarle.",
+  "key": "0537027a"
+ },
+ {
+  "char": "celestial",
+  "text": "Podemos pensar distinto y seguir siendo amigos.",
+  "key": "6cbdd343"
+ },
+ {
+  "char": "celestial",
+  "text": "Esperar mi turno en el columpio es respetar.",
+  "key": "e4a78823"
+ },
+ {
+  "char": "celestial",
+  "text": "¡Exacto! Todos merecen su turno.",
+  "key": "5dfcb75d"
+ },
+ {
+  "char": "celestial",
+  "text": "Puedo tomar las cosas de otros sin pedir permiso.",
+  "key": "106e5fc7"
+ },
+ {
+  "char": "celestial",
+  "text": "Siempre pedimos permiso antes de usar algo que no es nuestro.",
+  "key": "a289364c"
+ },
+ {
+  "char": "aquarius",
+  "text": "Aquarius cuida cada gota de este río. Pero alguien dejó basura en el agua… ¡ayúdalo a dejarlo brillante!",
+  "key": "3a573b15"
+ },
+ {
+  "char": "aquarius",
+  "text": "¡Este lugar todavía está dormido! Completa 2 retos en Bosque de la Amistad para despertarlo.",
+  "key": "8119b2f7"
+ },
+ {
+  "char": "aquarius",
+  "text": "Toca toda la basura que hay en el río y en la orilla.",
+  "key": "7f898677"
+ },
+ {
+  "char": "aquarius",
+  "text": "¡El río brilla otra vez! La basura en el agua enferma a los peces y a las plantas.",
+  "key": "cadffe9b"
+ },
+ {
+  "char": "aquarius",
+  "text": "¡Ese pececito vive aquí! Busca la basura.",
+  "key": "1df8a9aa"
+ },
+ {
+  "char": "aquarius",
+  "text": "El patito está feliz nadando. Sigue buscando.",
+  "key": "2c6fe31c"
+ },
+ {
+  "char": "aquarius",
+  "text": "La ranita es parte del río. ¡No es basura!",
+  "key": "409731fc"
+ },
+ {
+  "char": "aquarius",
+  "text": "¡Lo lograste!",
+  "key": "83f45d18"
+ },
+ {
+  "char": "aquarius",
+  "text": "¡Recogiste una botella! Faltan 1.",
+  "key": "cf1aa127"
+ },
+ {
+  "char": "aquarius",
+  "text": "¡Recogiste una botella! Faltan 2.",
+  "key": "2d1d73b8"
+ },
+ {
+  "char": "aquarius",
+  "text": "¡Recogiste una botella! Faltan 3.",
+  "key": "4f1fe7d5"
+ },
+ {
+  "char": "aquarius",
+  "text": "¡Recogiste una botella! Faltan 4.",
+  "key": "2d21f0e6"
+ },
+ {
+  "char": "aquarius",
+  "text": "¡Recogiste una botella! Faltan 5.",
+  "key": "4f246503"
+ },
+ {
+  "char": "aquarius",
+  "text": "¡Recogiste una lata! Faltan 1.",
+  "key": "b9c46e46"
+ },
+ {
+  "char": "aquarius",
+  "text": "¡Recogiste una lata! Faltan 2.",
+  "key": "3bcbf6b1"
+ },
+ {
+  "char": "aquarius",
+  "text": "¡Recogiste una lata! Faltan 3.",
+  "key": "d9c91dd4"
+ },
+ {
+  "char": "aquarius",
+  "text": "¡Recogiste una lata! Faltan 4.",
+  "key": "5bbd1e87"
+ },
+ {
+  "char": "aquarius",
+  "text": "¡Recogiste una lata! Faltan 5.",
+  "key": "39baaa6a"
+ },
+ {
+  "char": "aquarius",
+  "text": "¡Recogiste una bolsa! Faltan 1.",
+  "key": "22b435ed"
+ },
+ {
+  "char": "aquarius",
+  "text": "¡Recogiste una bolsa! Faltan 2.",
+  "key": "a0acad82"
+ },
+ {
+  "char": "aquarius",
+  "text": "¡Recogiste una bolsa! Faltan 3.",
+  "key": "82aebcdf"
+ },
+ {
+  "char": "aquarius",
+  "text": "¡Recogiste una bolsa! Faltan 4.",
+  "key": "80bb85ac"
+ },
+ {
+  "char": "aquarius",
+  "text": "¡Recogiste una bolsa! Faltan 5.",
+  "key": "a2bdf9c9"
+ },
+ {
+  "char": "aquarius",
+  "text": "¡Recogiste un vaso! Faltan 1.",
+  "key": "c3dd717a"
+ },
+ {
+  "char": "aquarius",
+  "text": "¡Recogiste un vaso! Faltan 2.",
+  "key": "25e4c785"
+ },
+ {
+  "char": "aquarius",
+  "text": "¡Recogiste un vaso! Faltan 3.",
+  "key": "43e2b828"
+ },
+ {
+  "char": "aquarius",
+  "text": "¡Recogiste un vaso! Faltan 4.",
+  "key": "a5ea0e33"
+ },
+ {
+  "char": "aquarius",
+  "text": "¡Recogiste un vaso! Faltan 5.",
+  "key": "43e73556"
+ },
+ {
+  "char": "aquarius",
+  "text": "¡Recogiste una envoltura! Faltan 1.",
+  "key": "dfe71f18"
+ },
+ {
+  "char": "aquarius",
+  "text": "¡Recogiste una envoltura! Faltan 2.",
+  "key": "01e51607"
+ },
+ {
+  "char": "aquarius",
+  "text": "¡Recogiste una envoltura! Faltan 3.",
+  "key": "dfe2a1ea"
+ },
+ {
+  "char": "aquarius",
+  "text": "¡Recogiste una envoltura! Faltan 4.",
+  "key": "e1f3ee31"
+ },
+ {
+  "char": "aquarius",
+  "text": "¡Recogiste una envoltura! Faltan 5.",
+  "key": "7ff11554"
+ },
+ {
+  "char": "aquarius",
+  "text": "¡Recogiste un periódico! Faltan 1.",
+  "key": "3437062b"
+ },
+ {
+  "char": "aquarius",
+  "text": "¡Recogiste un periódico! Faltan 2.",
+  "key": "523973fc"
+ },
+ {
+  "char": "aquarius",
+  "text": "¡Recogiste un periódico! Faltan 3.",
+  "key": "b43c4cd9"
+ },
+ {
+  "char": "aquarius",
+  "text": "¡Recogiste un periódico! Faltan 4.",
+  "key": "b22b0092"
+ },
+ {
+  "char": "aquarius",
+  "text": "¡Recogiste un periódico! Faltan 5.",
+  "key": "d42d74af"
+ },
+ {
+  "char": "aquarius",
+  "text": "Te estás cepillando los dientes. ¿Qué haces con la llave del agua?",
+  "key": "e5add329"
+ },
+ {
+  "char": "aquarius",
+  "text": "¡Bien hecho! Así ahorras muchos litros de agua cada día.",
+  "key": "6e1e5faa"
+ },
+ {
+  "char": "aquarius",
+  "text": "Mientras te cepillas, el agua se va por el desagüe sin usarla. ¿Cómo podrías guardarla?",
+  "key": "1fdc1099"
+ },
+ {
+  "char": "aquarius",
+  "text": "Más agua no limpia mejor tus dientes. Piensa en ahorrar.",
+  "key": "fa753729"
+ },
+ {
+  "char": "aquarius",
+  "text": "Decide qué hacer y descubre qué pasa.",
+  "key": "d50f4546"
+ },
+ {
+  "char": "aquarius",
+  "text": "En el baño del colegio una llave gotea: plic, plic, plic. ¿Qué haces?",
+  "key": "4f753e01"
+ },
+ {
+  "char": "aquarius",
+  "text": "Al final del día se perdió ¡un balde entero de agua! Aquarius está preocupado. ¿Y ahora?",
+  "key": "7d54add6"
+ },
+ {
+  "char": "aquarius",
+  "text": "El agua se sigue perdiendo. Cuidar el agua es tarea de todos. ¡Intentemos de nuevo!",
+  "key": "35c4b57a"
+ },
+ {
+  "char": "aquarius",
+  "text": "¡La arreglaron! Una buena acción salva miles de gotas.",
+  "key": "d3ae71f0"
+ },
+ {
+  "char": "aquarius",
+  "text": "¡No pasa nada! Volvamos a elegir.",
+  "key": "51a26704"
+ },
+ {
+  "char": "aquarius",
+  "text": "¡Qué buen final!",
+  "key": "58c16ea1"
+ },
+ {
+  "char": "aquarius",
+  "text": "¿Verdadero o falso?",
+  "key": "d5eaddf2"
+ },
+ {
+  "char": "aquarius",
+  "text": "El agua del planeta nunca se acaba.",
+  "key": "7018603c"
+ },
+ {
+  "char": "aquarius",
+  "text": "El agua dulce que podemos tomar es poquita. ¡Por eso la cuidamos!",
+  "key": "8e50c61c"
+ },
+ {
+  "char": "aquarius",
+  "text": "Lee la frase otra vez con calma y piensa cómo se sentirían los demás… o el planeta.",
+  "key": "b2adb3ca"
+ },
+ {
+  "char": "aquarius",
+  "text": "Una ducha corta ahorra agua.",
+  "key": "a6becc4f"
+ },
+ {
+  "char": "aquarius",
+  "text": "¡Sí! Cinco minutos son suficientes.",
+  "key": "fe6224ef"
+ },
+ {
+  "char": "aquarius",
+  "text": "Botar aceite por el lavaplatos ensucia los ríos.",
+  "key": "783c4713"
+ },
+ {
+  "char": "aquarius",
+  "text": "El aceite contamina mucha agua. Se guarda en una botella y se entrega para reciclar.",
+  "key": "a53cb1e4"
+ },
+ {
+  "char": "aquarius",
+  "text": "Puedo regar las plantas con el agua de lavar frutas.",
+  "key": "e0351b5c"
+ },
+ {
+  "char": "aquarius",
+  "text": "¡Qué buena idea! Así el agua se usa dos veces.",
+  "key": "614a5922"
+ },
+ {
+  "char": "aquarius",
+  "text": "¡Completaste todas las preguntas!",
+  "key": "6c3740dd"
+ },
+ {
+  "char": "popi",
+  "text": "Popi mantiene limpio el colegio y Rosebell cuida las plantas. En este valle cada residuo tiene su lugar.",
+  "key": "0675ff97"
+ },
+ {
+  "char": "popi",
+  "text": "¡Este lugar todavía está dormido! Completa 2 retos en Río de las Buenas Acciones para despertarlo.",
+  "key": "a8a5297c"
+ },
+ {
+  "char": "popi",
+  "text": "Arrastra cada residuo a su caneca. También puedes tocar el residuo y luego la caneca.",
+  "key": "3e549659"
+ },
+ {
+  "char": "popi",
+  "text": "¡Todo en su lugar! Separar bien ayuda a que los residuos tengan una nueva vida.",
+  "key": "a6452e7b"
+ },
+ {
+  "char": "popi",
+  "text": "Primero elige un residuo de arriba",
+  "key": "7a95a0a7"
+ },
+ {
+  "char": "popi",
+  "text": "¡Sí! Cáscara de banano: orgánicos.",
+  "key": "ea312b34"
+ },
+ {
+  "char": "popi",
+  "text": "Esa no es su caneca. Pista: Viene de una fruta: es un resto de comida.",
+  "key": "e1f2bb43"
+ },
+ {
+  "char": "popi",
+  "text": "Cáscara de banano. Ahora toca la caneca correcta.",
+  "key": "a1e9a252"
+ },
+ {
+  "char": "popi",
+  "text": "¡Sí! Botella plástica limpia: aprovechables.",
+  "key": "5c50365e"
+ },
+ {
+  "char": "popi",
+  "text": "Esa no es su caneca. Pista: El plástico limpio se puede volver a usar.",
+  "key": "45b24882"
+ },
+ {
+  "char": "popi",
+  "text": "Botella plástica limpia. Ahora toca la caneca correcta.",
+  "key": "5f8b67fa"
+ },
+ {
+  "char": "popi",
+  "text": "¡Sí! Servilleta usada: no aprovechables.",
+  "key": "1dcba57e"
+ },
+ {
+  "char": "popi",
+  "text": "Esa no es su caneca. Pista: Está sucia: ya no se puede reciclar.",
+  "key": "c2d4dcfa"
+ },
+ {
+  "char": "popi",
+  "text": "Servilleta usada. Ahora toca la caneca correcta.",
+  "key": "cd4830bb"
+ },
+ {
+  "char": "popi",
+  "text": "¡Sí! Caja de cartón: aprovechables.",
+  "key": "275d1c91"
+ },
+ {
+  "char": "popi",
+  "text": "Esa no es su caneca. Pista: El cartón seco se recicla.",
+  "key": "2cb199b0"
+ },
+ {
+  "char": "popi",
+  "text": "Caja de cartón. Ahora toca la caneca correcta.",
+  "key": "36bb3c6d"
+ },
+ {
+  "char": "popi",
+  "text": "¡Sí! Corazón de manzana: orgánicos.",
+  "key": "ec1d3625"
+ },
+ {
+  "char": "popi",
+  "text": "Esa no es su caneca. Pista: Es parte de una fruta.",
+  "key": "237119f2"
+ },
+ {
+  "char": "popi",
+  "text": "Corazón de manzana. Ahora toca la caneca correcta.",
+  "key": "db0749bb"
+ },
+ {
+  "char": "popi",
+  "text": "¡Sí! Lata: aprovechables.",
+  "key": "43691842"
+ },
+ {
+  "char": "popi",
+  "text": "Esa no es su caneca. Pista: El metal se puede derretir y volver a usar.",
+  "key": "d3231152"
+ },
+ {
+  "char": "popi",
+  "text": "Lata. Ahora toca la caneca correcta.",
+  "key": "e030b646"
+ },
+ {
+  "char": "popi",
+  "text": "¡Sí! Cáscara de huevo: orgánicos.",
+  "key": "f65a1a02"
+ },
+ {
+  "char": "popi",
+  "text": "Esa no es su caneca. Pista: Es un resto de la cocina.",
+  "key": "640179c0"
+ },
+ {
+  "char": "popi",
+  "text": "Cáscara de huevo. Ahora toca la caneca correcta.",
+  "key": "29b71a54"
+ },
+ {
+  "char": "popi",
+  "text": "¡Sí! Hoja de papel: aprovechables.",
+  "key": "3429d80b"
+ },
+ {
+  "char": "popi",
+  "text": "Esa no es su caneca. Pista: El papel limpio se vuelve papel nuevo.",
+  "key": "7192cef4"
+ },
+ {
+  "char": "popi",
+  "text": "Hoja de papel. Ahora toca la caneca correcta.",
+  "key": "1b190acf"
+ },
+ {
+  "char": "popi",
+  "text": "¡Sí! Curita usada: no aprovechables.",
+  "key": "e5ef378f"
+ },
+ {
+  "char": "popi",
+  "text": "Esa no es su caneca. Pista: Algo usado y sucio no se recicla.",
+  "key": "c520d342"
+ },
+ {
+  "char": "popi",
+  "text": "Curita usada. Ahora toca la caneca correcta.",
+  "key": "cf48c59c"
+ },
+ {
+  "char": "popi",
+  "text": "Ves un papel tirado en el patio del colegio. ¿Qué haces?",
+  "key": "7c88a25a"
+ },
+ {
+  "char": "popi",
+  "text": "¡Así se cuida el colegio! Un patio limpio es más bonito para todos.",
+  "key": "dfd3a126"
+ },
+ {
+  "char": "popi",
+  "text": "El papel sigue ahí, solo cambió de lugar. ¿Cómo lo quitamos de verdad?",
+  "key": "54cfa54a"
+ },
+ {
+  "char": "popi",
+  "text": "Popi dice: el colegio es de todos y lo cuidamos entre todos.",
+  "key": "b99afaf9"
+ },
+ {
+  "char": "rosebell",
+  "text": "¿Cómo le das una nueva vida a una botella plástica?",
+  "key": "1ac730cc"
+ },
+ {
+  "char": "rosebell",
+  "text": "En el río la botella dañaría a los peces. ¡Piensa en algo creativo!",
+  "key": "04ac3a5e"
+ },
+ {
+  "char": "rosebell",
+  "text": "¡Genial! Reutilizar es darle otro uso a las cosas antes de botarlas.",
+  "key": "8fad172b"
+ },
+ {
+  "char": "rosebell",
+  "text": "El humo contamina el aire que respiramos. Busca otra idea.",
+  "key": "9e153486"
+ },
+ {
+  "char": "rosebell",
+  "text": "Toca los pasos en el orden correcto para sembrar una planta.",
+  "key": "abd0dd5b"
+ },
+ {
+  "char": "rosebell",
+  "text": "¡Muy bien! Con agua, sol y cariño la semillita crecerá.",
+  "key": "95d1e016"
+ },
+ {
+  "char": "rosebell",
+  "text": "Piensa: ¿qué se hace primero para que la semilla tenga dónde estar?",
+  "key": "bc503de4"
+ },
+ {
+  "char": "rosebell",
+  "text": "¡Bien! ¿Cuál es el paso 2?",
+  "key": "540a8738"
+ },
+ {
+  "char": "rosebell",
+  "text": "¡Bien! ¿Cuál es el paso 3?",
+  "key": "540848a1"
+ },
+ {
+  "char": "rosebell",
+  "text": "¡Bien! ¿Cuál es el paso 4?",
+  "key": "d405408a"
+ },
+ {
+  "char": "rosebell",
+  "text": "Ese paso viene después. ¿Qué sigue luego de “hacer un hoyo en la tierra”?",
+  "key": "99085eb1"
+ },
+ {
+  "char": "rosebell",
+  "text": "Ese paso viene después. ¿Qué sigue luego de “poner la semilla”?",
+  "key": "70b3d6d3"
+ },
+ {
+  "char": "rosebell",
+  "text": "Ese paso viene después. ¿Qué sigue luego de “taparla con tierra”?",
+  "key": "9fcc7e59"
+ },
+ {
+  "char": "chochito",
+  "text": "En la cima viven Chochito y Hielosi. Para subir la montaña hay que tomar buenas decisiones.",
+  "key": "6bb50d0c"
+ },
+ {
+  "char": "chochito",
+  "text": "¡Este lugar todavía está dormido! Completa 2 retos en Valle del Reciclaje para despertarlo.",
+  "key": "ea4170c4"
+ },
+ {
+  "char": "chochito",
+  "text": "Elige qué hace Chochito y mira lo que pasa.",
+  "key": "7c0301b8"
+ },
+ {
+  "char": "chochito",
+  "text": "Chochito tiene tarea y sus amigos lo invitan a jugar. ¿Qué hace?",
+  "key": "a2305c7b"
+ },
+ {
+  "char": "chochito",
+  "text": "Jugó tanto que ya es de noche, está cansado… ¡y la tarea sigue sin hacer! ¿Qué hace ahora?",
+  "key": "f4536236"
+ },
+ {
+  "char": "chochito",
+  "text": "Decir mentiras no arregla el problema. ¡Busquemos una mejor decisión!",
+  "key": "bcc10757"
+ },
+ {
+  "char": "chochito",
+  "text": "¡Terminó la tarea y jugó tranquilo! Ser responsable es cumplir con lo que te toca.",
+  "key": "b9e1025f"
+ },
+ {
+  "char": "chochito",
+  "text": "Chochito aprendió algo: organizarse primero hace todo más fácil. ¡Eso también es responsabilidad!",
+  "key": "72bbbd3d"
+ },
+ {
+  "char": "chochito",
+  "text": "¡No pasa nada! Volvamos a elegir.",
+  "key": "b73ca11a"
+ },
+ {
+  "char": "chochito",
+  "text": "¡Qué buen final!",
+  "key": "22cc65ab"
+ },
+ {
+  "char": "hielosi",
+  "text": "A un compañero se le olvidó la lonchera y tiene hambre. ¿Qué haces?",
+  "key": "73f38b4e"
+ },
+ {
+  "char": "hielosi",
+  "text": "Piensa cómo se siente tener hambre. ¿Cómo podrías ayudarlo?",
+  "key": "d85cf2c4"
+ },
+ {
+  "char": "hielosi",
+  "text": "Todos olvidamos cosas a veces. ¿Qué haría Hielosi?",
+  "key": "36f80720"
+ },
+ {
+  "char": "hielosi",
+  "text": "¡Eso es solidaridad! Ayudar a quien lo necesita nos hace más fuertes.",
+  "key": "e7402515"
+ },
+ {
+  "char": "chochito",
+  "text": "Toca un Pegajosito y luego el valor que representa.",
+  "key": "45916f4d"
+ },
+ {
+  "char": "chochito",
+  "text": "¡Conoces muy bien a tus amigos y sus valores!",
+  "key": "a123010a"
+ },
+ {
+  "char": "chochito",
+  "text": "¡Sí! Lo mío es ser AMIGABLE.",
+  "key": "dd085448"
+ },
+ {
+  "char": "chochito",
+  "text": "Pista sobre Romina: Romina lleva una corona dorada y tres ojitos de colores. Siempre saluda primero e invita a todos a jugar.",
+  "key": "fb9f8c17"
+ },
+ {
+  "char": "chochito",
+  "text": "¡Sí! Lo mío es RESPETAR.",
+  "key": "1d68da5c"
+ },
+ {
+  "char": "chochito",
+  "text": "Pista sobre Celestial: Celestial es un cuadrito de colores con tres ojos. Escucha con atención y espera su turno.",
+  "key": "71278d19"
+ },
+ {
+  "char": "chochito",
+  "text": "¡Sí! Lo mío es el AMOR.",
+  "key": "374fda28"
+ },
+ {
+  "char": "chochito",
+  "text": "Pista sobre GATIAMOR: GATIAMOR es una gatita rosada con un corazón en la pancita. Reparte cariño a donde va.",
+  "key": "9c5987f5"
+ },
+ {
+  "char": "chochito",
+  "text": "¡Sí! Lo mío es la SOLIDARIDAD.",
+  "key": "44896041"
+ },
+ {
+  "char": "chochito",
+  "text": "Pista sobre Hielosi: Hielosi es azul y alargado, con dos ojitos uno encima del otro. Siempre ayuda a quien lo necesita.",
+  "key": "c5044853"
+ },
+ {
+  "char": "chochito",
+  "text": "¡Sí! Lo mío es cuidar el AGUA.",
+  "key": "46e136ed"
+ },
+ {
+  "char": "chochito",
+  "text": "Pista sobre Aquarius: Aquarius es una gotita gigante y sonriente. Cuida cada gota de los ríos y del colegio.",
+  "key": "1cec03a5"
+ },
+ {
+  "char": "chochito",
+  "text": "¡Sí! Lo mío es la RESPONSABILIDAD.",
+  "key": "b799df33"
+ },
+ {
+  "char": "chochito",
+  "text": "Pista sobre Chochito: Chochito es azul con borde rosado, tres ojos grandes y antenas. Cumple lo que promete.",
+  "key": "6b9ecd1c"
+ },
+ {
+  "char": "hielosi",
+  "text": "Decide si cada acción es responsable o no.",
+  "key": "ac00791a"
+ },
+ {
+  "char": "hielosi",
+  "text": "Guardo mis juguetes después de jugar.",
+  "key": "83fdce28"
+ },
+ {
+  "char": "hielosi",
+  "text": "¡Muy bien! Así nada se pierde ni se daña.",
+  "key": "b314f58d"
+ },
+ {
+  "char": "hielosi",
+  "text": "Lee la frase otra vez con calma y piensa cómo se sentirían los demás… o el planeta.",
+  "key": "53273396"
+ },
+ {
+  "char": "hielosi",
+  "text": "Dejo la luz encendida al salir del salón.",
+  "key": "5680e0c3"
+ },
+ {
+  "char": "hielosi",
+  "text": "Apagar la luz ahorra energía y cuida el planeta.",
+  "key": "6f7479a1"
+ },
+ {
+  "char": "hielosi",
+  "text": "Riego la planta del salón cuando me toca.",
+  "key": "608173ae"
+ },
+ {
+  "char": "hielosi",
+  "text": "¡Eso es cumplir con tu tarea!",
+  "key": "d2ebf325"
+ },
+ {
+  "char": "hielosi",
+  "text": "Dejo mis útiles tirados y se pierden.",
+  "key": "0aefe0ce"
+ },
+ {
+  "char": "hielosi",
+  "text": "Cuidar nuestras cosas también es ser responsable.",
+  "key": "c58d041e"
+ },
+ {
+  "char": "hielosi",
+  "text": "¡Completaste todas las preguntas!",
+  "key": "97845d79"
+ }
+]
